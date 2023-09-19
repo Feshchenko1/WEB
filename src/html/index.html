@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/nav.css"/>
+    <script src="../js/main.js"></script> 
+
+    <title>Богдан та Фещенко</title>
+    <style>
+
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+center {
+  margin: 22em auto;
+  font: 400 1em / 1.2 'Gentium Book Basic';
+}
+p + p {
+  margin-top: 1em;
+}
+.book {
+  background: linear-gradient(to bottom, #60584A, #26231e);
+  height: 40em;
+  width: 60em;
+  margin: 7em auto;
+  box-shadow: 0 1em 3em rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.book .pages-container {
+  background: #D5D6BC;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.book .pages-container .page {
+  position: absolute;
+  height: inherit;
+  width: 50%;
+  padding: 1em;
+  font: 400 1em / 1.2 'Gentium Book Basic';
+}
+
+.book .pages-container .page:last-of-type,
+.book .pages-container .page.front {
+  background: linear-gradient(to right, #978c79, #D5D6BC 20%, #FFFFFF 100%);
+  margin-left: 50%;
+}
+.book .pages-container .page.duplex {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  margin-left: 50%;
+  z-index: 1;
+  transform-style: preserve-3d;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.book .pages-container .page.duplex.leaf-left .back {
+  background: linear-gradient(to left, #978c79, #D5D6BC 20%, #FFFFFF 100%);
+}
+
+
+.book .pages-container .page.duplex .front,
+.book .pages-container .page.duplex .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  width: 100%;
+  margin: 0;
+}
+.book .pages-container .page.duplex .back {
+  transform: rotateY(180deg);
+}
+
+
+
+
+        
+    </style>
+
+
+</head>
+<header>
+    <h1>Богдан Фещенко</h1>
+</header>
+<nav>
+    <a href="#">Головна</a>
+    <a rel="import" href="../html/pages/about/index.html">Про мене</a>
+    <a href="../html/pages/practs/index.html">Практичні роботи</a>
+    <a href="../html/pages/labs/index.html">Лабораторні заняття</a>
+</nav>
+
+<body>
+   
+
+  <center>Click on book</center>
+
+  <div class="book" id="test-book">
+      <div class="pages-container">
+          <div class="page">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem repellat fuga numquam laboriosam hic quis quia commodi ex recusandae ut architecto, quod nisi, delectus ea error officiis, id doloremque.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae necessitatibus aut officia voluptates, ex repellendus reprehenderit! Minima repellat fugiat rem fugit incidunt placeat praesentium, saepe voluptates magni temporibus illo. Sequi?
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut reprehenderit maxime provident! Vel eveniet nisi ab 
+Lorem ipsum dolut reprehenderit maxime provident! Vel eveniet nisi ab 
+                </P>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem repellat fuga numquam laboriosam hic quis quia commodi ex recusandae ut architecto, quod nisi, delectus ea error officiis, id doloremque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae necessitatibus aut officia voluptates, ex repellendus reprehenderit! Minima repellat fugiat rem fugit incidunt placeat praesentium, saepe voluptates magni temporibus illo. Sequi?
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut reprehenderit maxime provident! Vel eveniet nisi ab 
+  Lorem ipsum dolut reprehenderit maxime provident! Vel eveniet nisi ab 
+                  </P>
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     
+                                    </P>
+
+          </div>
+          <div class="page duplex" id="test-duplex">
+              <div class="page front">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, esse.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut reprehenderit maxime provident! Vel eveniet nisi ab molestias nesciunt quasi aperiam, omnis molestiae nemo exercitationem vitae id quis alias, assumenda tempore neque itaque tempora facilis placeat incidunt eaque at. Expedita maxime eum, debitis voluptatem. Deleniti!</p>
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut reprehenderit maxime provident! Vel eveniet nisi ab 
+                  </P>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, esse.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut reprehenderit maxime provident! Vel eveniet nisi ab molestias nesciunt quasi aperiam, omnis molestiae nemo exercitationem vitae id quis alias, assumenda tempore neque itaque tempora facilis placeat incidunt eaque at. Expedita maxime eum, debitis voluptatem. Deleniti!</p>
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut reprehenderit maxime provident! Vel eveniet nisi ab 
+                  </P>
+                   <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+ 
+                </P>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  
+                                  </P>
+                </div>
+              <div class="page back">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti distinctio maiores ratione animi vero, eius ipsa eum perferendis deleniti totam!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed impedit numquam quibusdam nesciunt sint eius eaque laudantium officiis inventore veritatis!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis est pariatur, ducimus voluptatem ut sint!</p>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+</body>
+
+
+
+    <footer>
+        <div class="container_f">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Контактні дані</h4>
+              <p>Ім'я: Студент Іванов</p>
+              <p>Електронна пошта: ivanov@student.com</p>
+              <p>Телефон: +380 12 345 6789</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Соціальні мережі</h4>
+              <ul class="social-icons">
+                <li><a href="^1^" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="^2^" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="^3^" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="^4^" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Роки навчання</h4>
+              <p>Студент Іванов навчається на факультеті комп'ютерних наук Київського національного університету імені Тараса Шевченка з 2021 по 2025 роки.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4><a href="https://github.com/Feshchenko1/Web-tech" target="_blank">Репозиторій на GitHub</a></h4>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</html>
