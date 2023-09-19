@@ -47,9 +47,7 @@ footer .social-icons li {
     margin-right: 10px;
 }
 
-footer .social-icons li:last-child {
-    margin-right: 0;
-}
+
 
 footer .social-icons a {
     display: block;
