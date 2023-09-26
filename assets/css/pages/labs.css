@@ -28,9 +28,6 @@ cursor: not-allowed;
 }
 
 
-
-/*
-
 .continue-application {
   --color: #fff;
   --background: #404660;
@@ -241,7 +238,8 @@ cursor: not-allowed;
   --pbd: .15s;
   --pex: -24px;
 }
-*/
+
+
 
 
 /*==============НЕ АКТИВНА КНОПКА==================*/
