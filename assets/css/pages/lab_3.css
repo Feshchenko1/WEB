@@ -1,5 +1,5 @@
 body{
-    background-color: #000000;
+    background-color: #0f0f0f;
     overflow: hidden;
   }
 
@@ -17,7 +17,7 @@ body{
     align-items: center; 
     padding: 10px; 
     background-color: #f8f9fa; 
-    background-color: #000000;
+    background-color: #0f0f0f;
   }
 
   .logo {
@@ -30,17 +30,19 @@ body{
     display: flex; 
     flex-grow: 1; 
     margin: 0 20px; 
+    justify-content: center;
   }
 
   .search-input {
-    width: 100%; 
+    width: 536px; 
     height: 40px; 
     border: none; 
     padding: 10px; 
     font-size: 18px; 
-    background-color: #000000;
+    background-color: #0f0f0f;
     border-radius: 20px; 
     border: 2px solid #706b6b; 
+
   }
 
 
@@ -60,7 +62,6 @@ body{
   display: flex;
   gap: 10px;
   padding: 10px;
-
   position: absolute; 
 left: 240px; 
 top: 50px; 
@@ -68,12 +69,16 @@ top: 50px;
 }
 
 .button_1{
-background-color: #554f4f; 
+background-color: #303030; 
 border-radius: 10px; 
+color: #f9f9f9;
+justify-content: center;
+width: fit-content;
+
 }
 
 .button_1:hover {
-background-color: #706b6b; 
+background-color: #3d3d3d; 
 border-radius: 10px;
 }
 
@@ -98,11 +103,12 @@ flex-direction: column;
 
 
 .video {
-width: 363px; 
-height: 205px; 
+width: 298px; 
+height: 180px; 
 margin: 7px; 
 background-color: #797e81; 
 border-radius: 10px; 
+
 }
 
 
@@ -139,7 +145,7 @@ display: flex;
 flex-direction: column; 
 width: 240px; 
 height: 1524px; 
-background-color: #000000; 
+background-color: #0f0f0f; 
 position: fixed; 
 left: 0; 
 top: 70px; 
@@ -200,7 +206,7 @@ height: 24px;
 }
 
 button{
-background-color: #000000;
+background-color: #0f0f0f;
 width: 204px; 
 height: 40px; 
 padding: 0px 12px;
@@ -213,7 +219,7 @@ border: 0;
 }
 
 button:hover {
-background-color: #554f4f; 
+background-color: #3d3d3d; 
 border-radius: 10px;
 }
 
