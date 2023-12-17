@@ -30,6 +30,13 @@ h1 {
     grid-row: 2 / 3;
     justify-content: start;
 }
+#week-of input[type="text"] { 
+    border-top: none;
+    border-left: none ;
+    border-right: none; 
+
+
+  }
 
 #healthy-habit {
     display: grid;
@@ -37,6 +44,13 @@ h1 {
     grid-row: 2 / 3; 
     justify-content: end;
 }
+#healthy-habit input[type="text"] { 
+    border-top: none;
+    border-left: none ;
+    border-right: none; 
+
+
+  }
 
 #rocked-it {
     display: grid;
@@ -69,8 +83,14 @@ h1 {
     font-weight: normal;
     padding: 0 20px;
 }
+
 #to_do input[type="checkbox"] { width: 10%;  }
-#to_do input[type="text"] { width: 85%; }
+#to_do input[type="text"] { width: 85%; 
+    border-top: none;
+    border-left: none ;
+    border-right: none; 
+
+  }
 
 #to_do input{
     width: 100%;
